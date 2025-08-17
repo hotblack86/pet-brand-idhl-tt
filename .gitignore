@@ -1,0 +1,10 @@
+# Node dependencies
+node_modules/
+
+# Webpack output
+/dist
+
+# OS / editor files
+.DS_Store
+*.log
+
