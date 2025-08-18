@@ -7,33 +7,47 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- HEADER -->
+  <!-- Header stays outside the page split -->
   <header class="header">
-    <div class="header__logo">
-      <img src="./assets/logo.svg" alt="Brand Logo" class="header__logo-img">
-    </div>
+  <div class="header__left">
+    <img src="./assets/logo.svg" alt="Brand Logo" class="header__logo-img">
+  </div>
+  <div class="header__right">
     <button class="header__cart-btn">
       <img src="./assets/bag.svg" alt="Bag Icon" class="header__cart-icon">
     </button>
-  </header>
+  </div>
+</header>
 
-  <!-- HERO / INTRO -->
-  <section class="intro">
-    <h1 class="intro__heading">Ornare Vulputate Elit</h1>
-    <p class="intro__text">Nullam quis risus eget urna mollis ornare vel eu leo. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Aenean lacinia bibendum nulla sed consectetur. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-  </section>
+  <div class="page">
+    <!-- LEFT SIDE -->
+    <div class="page__left">
+      <!-- HERO / INTRO -->
+      <section class="intro">
+        <h1 class="intro__heading">Ornare Vulputate Elit</h1>
+        <p class="intro__text">
+          Nullam quis risus eget urna mollis ornare vel eu leo. Fusce dapibus, tellus ac cursus commodo, 
+          tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Aenean lacinia 
+          bibendum nulla sed consectetur. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+        </p>
+      </section>
+    </div>
 
-  <!-- PRODUCT CARD -->
-  <section class="product">
-    <div class="product__image-container">
-      <img src="./assets/chicken@2x.png" alt="Product Image" class="product__image">
+    <!-- RIGHT SIDE -->
+    <div class="page__right">
+      <!-- PRODUCT CARD -->
+      <section class="product">
+        <div class="product__image-container">
+          <img src="./assets/chicken@2x.png" alt="Product Image" class="product__image">
+        </div>
+        <div class="product__info">
+          <h2 class="product__title">Natures Menu Dog Food Can Chicken</h2>
+          <p class="product__price">£22.81</p>
+          <button class="product__add-btn">Add to Bag</button>
+        </div>
+      </section>
     </div>
-    <div class="product__info">
-      <h2 class="product__title">Natures Menu Dog Food Can Chicken</h2>
-      <p class="product__price">£22.81</p>
-      <button class="product__add-btn">Add to Bag</button>
-    </div>
-  </section>
+  </div>
 
   <!-- SLIDE OUT CART -->
   <aside class="cart">
@@ -41,10 +55,10 @@
       <img src="./assets/close.svg" alt="Close Icon" class="cart__close-icon">
     </button>
     <div class="cart__items">
-      <!-- Pre-populated cart items will go here -->
-      
+      <!-- Pre-populated cart items go here -->
     </div>
   </aside>
 </body>
+
 </html>
 
