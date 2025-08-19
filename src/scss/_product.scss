@@ -1,0 +1,50 @@
+@use "variables" as *;
+
+.product {
+  background: $color-white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border-radius: 3px;
+  padding: $spacing-md;
+  max-width: 360px;
+  width: 100%;
+
+  &__image-container {
+    margin-bottom: $spacing-md;
+
+    .product__image {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  &__info {
+    padding: $spacing-md;
+
+    .product__title {
+      font-size: 1.2rem;
+      margin-bottom: $spacing-sm;
+    }
+
+    .product__price {
+      font-weight: bold;
+      margin-bottom: $spacing-md;
+      color: $color-orange;
+    }
+  }
+
+  &__add-btn {
+    width: 100%;
+    padding: $spacing-md;
+    background: $color-orange;
+    color: $color-white;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+}

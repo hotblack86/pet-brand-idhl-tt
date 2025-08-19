@@ -1,0 +1,84 @@
+@use "variables" as *;
+
+/*
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: $spacing-md;
+  background: $color-white;
+
+  .header__logo-img {
+    height: 40px;
+  }
+
+  .header__cart-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+
+    .header__cart-icon {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+
+// Desktop split background behaviour
+@media (min-width: 768px) {
+  .header {
+    background: none; // remove solid background
+    position: relative;
+    z-index: 10;
+
+    .header__left {
+      background: $color-main-bg;
+      flex: 1;
+      display: flex;
+      align-items: center;
+    }
+
+    .header__right {
+      background: $color-secondary-bg;
+      flex: 1;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+  }
+}
+*/
+
+.header {
+  position: absolute; // overlays the page
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: $header-height;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  z-index: 1000;
+  background: transparent;
+
+  @media (min-width: 768px) {
+    padding: 3rem;
+  }
+
+ 
+}
+
+.header__logo-img {
+  height: 24px;
+}
+
+.header__cart-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.header__cart-icon {
+  height: 24px;
+}

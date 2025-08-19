@@ -1,0 +1,16 @@
+@use "variables" as *;
+
+.intro {
+  max-width: 400px;
+  width: 100%; 
+
+  &__heading {
+    font-size: 1.5rem;
+    margin-bottom: $spacing-lg;
+  }
+
+  &__text {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+}

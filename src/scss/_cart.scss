@@ -1,0 +1,46 @@
+@use "variables" as *;
+
+.cart {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 320px;
+  background: $color-white;
+  box-shadow: -4px 0 12px rgba(0, 0, 0, 0.15);
+  padding: $spacing-lg $spacing-md;
+  transform: translateX(100%); // hidden by default
+  transition: transform 0.3s ease-in-out;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+
+  &.cart--open {
+    transform: translateX(0); // slides in
+  }
+
+  &__close-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    align-self: flex-end;
+    margin-bottom: $spacing-md;
+
+    img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  &__items {
+    flex: 1;
+    overflow-y: auto;
+    border-top: 1px solid $color-grey;
+    padding-top: $spacing-md;
+
+    p {
+      color: $color-black;
+      font-size: 0.95rem;
+    }
+  }
+}
