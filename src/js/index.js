@@ -1,6 +1,8 @@
 // Import SCSS
 import '../scss/main.scss';
 
+import "./cart-component.js";
+
 // Import assets
 import logo from '../assets/logo.svg';
 import bagIcon from '../assets/bag.svg';
@@ -8,10 +10,8 @@ import closeIcon from '../assets/close.svg';
 import productImgLarge from '../assets/chicken@2x.png';
 import productImg from '../assets/chicken.png';
 
-console.log("Logo path:", logo);
-
-// Import cart logic
-import { initCart } from './cart';
+// Query the cart directly from DOM
+const cart = document.querySelector("slide-out-cart");
 
 // Inject images into DOM
 document.querySelector('.header__logo-img').src = logo;
@@ -21,3 +21,7 @@ document.querySelector('.product__image').src = productImgLarge;
 
 // Initialize cart functionality
 //initCart();
+
+
+const addBtn = document.querySelector(".product__add-btn");
+addBtn.addEventListener("click", () => cart.open());

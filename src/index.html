@@ -47,14 +47,34 @@
   </div>
 
   <!-- SLIDE OUT CART -->
-  <aside class="cart">
-    <button class="cart__close-btn">
-      <img src="./assets/close.svg" alt="Close Icon" class="cart__close-icon">
-    </button>
-    <div class="cart__items">
-      <!-- Pre-populated cart items go here -->
+
+  <slide-out-cart class="cart">
+    <div class="cart__header">
+      <h2 class="cart__title">Your Bag</h2>
+      <button class="cart__close-btn">
+        <img src="./assets/close.svg" alt="Close Icon" class="cart__close-icon">
+      </button>
     </div>
-  </aside>
+    <div class="cart__items">
+      <div class="cart__item">
+        <div class="cart__item__image-container">
+          <img src="./assets/chicken.png" alt="Product Image" class="cart__item__image">
+        </div>
+        <div class="cart__item__info">
+          <h2 class="cart__item__title">Natures Menu Dog Food Can Chicken</h2>
+          <p class="cart__item__price">£22.81</p>
+          <button class="cart__item__remove">REMOVE</button>
+        </div>
+      </div>
+    </div>
+    <div class="cart__footer">
+      <p class="cart__total">
+        <span>Subtotal:</span><span>£22.81</span>
+      </p>
+      <button class="cart__checkout-btn">PROCEED TO CHECKOUT</button>
+      <button class="cart__continue-btn">CONTINUE SHOPPING</button>
+    </div>
+  </slide-out-cart>
 </body>
 
 </html>
