@@ -43,8 +43,54 @@
     letter-spacing: 1px;
     cursor: pointer;
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    font-weight: bold;
+
     &:hover {
       opacity: 0.9;
     }
+
+    .label,
+    .spinner,
+    .tick {
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      position: absolute;
+    }
+
+    .label { opacity: 1; }
+
+    &.loading {
+      .label { opacity: 0; }
+      .spinner { opacity: 1; }
+    }
+
+    &.success {
+      .label { opacity: 0; }
+      .tick { opacity: 1; }
+    }
+
+    .spinner {
+      width: 16px;
+      height: 16px;
+      border: 2px solid rgba($color-white, 0.3);
+      border-top-color: $color-white;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+
+    .tick {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
   }
 }

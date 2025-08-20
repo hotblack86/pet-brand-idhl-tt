@@ -10,18 +10,8 @@ import closeIcon from '../assets/close.svg';
 import productImgLarge from '../assets/chicken@2x.png';
 import productImg from '../assets/chicken.png';
 
-// Query the cart directly from DOM
-const cart = document.querySelector("slide-out-cart");
-
 // Inject images into DOM
 document.querySelector('.header__logo-img').src = logo;
 document.querySelector('.header__cart-icon').src = bagIcon;
 document.querySelector('.cart__close-icon').src = closeIcon;
 document.querySelector('.product__image').src = productImgLarge;
-
-// Initialize cart functionality
-//initCart();
-
-
-const addBtn = document.querySelector(".product__add-btn");
-addBtn.addEventListener("click", () => cart.open());
