@@ -1,94 +1,32 @@
 @use "variables" as *;
 
-/*
 .page {
   display: flex;
   flex-direction: column;
-  text-align: center;
+  margin-top: $header-height;
   min-height: 100vh;
+  text-align: center;
 
-  .page__left {
-    background: $color-main-bg;
-    //padding: $spacing-lg $spacing-md;
-  }
-
-  .page__right {
-    background: $color-secondary-bg;
-    //padding: $spacing-lg $spacing-md;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-  }
-}
-
-@media (min-width: 768px) {
-  .page {
+  @media (min-width: $breakpoint-md) {
     flex-direction: row;
-    //min-height: calc(100vh - 80px); // account for header
+    margin-top: 0;
   }
 
-  .page__left, 
-  .page__right {
+  &__left,
+  &__right {
     flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
   }
-}
 
-
-.page {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 100vh;
-  text-align: center;
-
-  @media (min-width: 768px) {
-    flex-direction: row;
+  &__left {
+    background-color: $color-main-bg;
   }
-}
 
-.page__left {
-  flex: 1;
-  background-color: $color-main-bg;
-  padding: 2rem;
-}
-
-.page__right {
-  flex: 1;
-  background-color: $color-secondary-bg;
-  padding: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-*/
-
-
-.page {
-  display: flex;
-  min-height: 100vh;
-  text-align: center;
-
-  @media (max-width: 768px) {
-    flex-direction: column;
-    margin-top: $header-height;
+  &__right {
+    background-color: $color-secondary-bg;
   }
-}
-
-.page__left {
-  flex: 1;
-  background: $color-main-bg;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem;
-}
-
-.page__right {
-  flex: 1;
-  background: $color-secondary-bg;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem;
 }
 
