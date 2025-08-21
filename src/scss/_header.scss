@@ -1,7 +1,7 @@
 @use "variables" as *;
 
 .header {
-  position: absolute; // overlays the page
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -16,7 +16,6 @@
   @media (min-width: $breakpoint-md) {
     padding: 3rem;
   }
-
 }
 
 .header__logo-img,

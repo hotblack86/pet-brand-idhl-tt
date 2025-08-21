@@ -54,7 +54,7 @@ npm run build
 - The dist/ folder can be deployed directly to a web server
 
 
-**Notes**
+## Notes
 - The slide-out cart is implemented as a reusable web component
 
 - SCSS variables are used for colors, spacing, and typography
@@ -62,3 +62,25 @@ npm run build
 - The “Add to Bag” button features a 1-second spinner loading animation and tick confirmation before the cart slides out
 
 - Tested on desktop, iOS, and Android for responsiveness and cross-browser support
+
+
+## Additional Enhancements Beyond Requirements
+
+While the test requirements allowed for a pre-populated cart, the following improvements have been implemented to demonstrate a more dynamic and reusable component:
+
+- **Dynamic Cart Functionality**
+  - The cart is initially empty.
+  - The product can be added via the "Add to Bag" button.
+  - The product can be removed from the cart.
+  - Quantity and subtotal update dynamically based on user interactions.
+
+- **Flexible Cart Interaction**
+  - The cart can be opened immediately by clicking the header cart icon.
+  - The cart can be closed by clicking either the overlay or the "Continue Shopping" button.
+
+
+## Technologies Used
+
+- Javascript ES6 with Web Components - for interactive cart component
+- SASS - for modular, reusable styling
+- Webpack - for bundling and asset management
