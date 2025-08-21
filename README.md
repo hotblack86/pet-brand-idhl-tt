@@ -27,19 +27,19 @@ Design assets for **desktop and mobile** can be found in the `assets` folder.
 
 ---
 
-## Getting Started
-
-## Running the Project Locally
+## Instructions
 
 1. **Install dependencies**  
 
 ```bash
 npm install
+```
 
 2. **Start the development server**
 
 ```bash
 npm run start
+```
 
 - The development server will be available at http://localhost:8080
 - Changes to the code will automatically reload the page
@@ -48,6 +48,7 @@ npm run start
 
 ```bash
 npm run build
+```
 
 - Generates minified CSS and JS in the dist/ folder
 - The dist/ folder can be deployed directly to a web server
