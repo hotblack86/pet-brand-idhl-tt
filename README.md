@@ -70,6 +70,10 @@ npm run build
 
 - Tested on desktop, iOS, and Android for responsiveness and cross-browser support
 
+- The cart is scrollable on mobiles and tablets. There's only one product to add to the cart, but this has been tested with multiple products.
+
+- The hex color codes provided in the design assets didn't always exactly match the colors in the images from the layers folder.
+
 
 ## Additional Enhancements Beyond Requirements
 
