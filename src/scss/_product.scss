@@ -16,12 +16,12 @@
 
     .product__image {
       width: 100%; 
-      max-width: 180px;
+      max-width: 240px;
       height: auto;
       object-fit: contain;
 
       @media (min-width: $breakpoint-md) {
-        max-width: 250px;
+        max-width: 320px;
       }
     }
   }
@@ -43,21 +43,21 @@
 
   &__add-btn {
     width: 100%;
-    padding: $spacing-md;
+    max-width: 200px;
+    margin: 0 auto;
+    padding: 1.25rem;
     background: $color-orange;
     color: $color-white;
     border: none;
     border-radius: 30px;
-    font-size: 1rem;
+    font-size: $spacing-md;
     letter-spacing: 1px;
     cursor: pointer;
-
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
     position: relative;
-    font-weight: bold;
 
     &:hover {
       opacity: 0.9;
@@ -93,7 +93,11 @@
     }
 
     .tick {
+      display: inline-block;
+      color: $color-white;
+      -webkit-text-fill-color: $color-white;
       font-size: 1.2rem;
+      line-height: 1;
     }
   }
 }

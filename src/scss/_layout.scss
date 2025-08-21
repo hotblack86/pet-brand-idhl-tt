@@ -18,15 +18,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 2rem;
+    padding: $spacing-xl;
   }
 
   &__left {
-    background-color: $color-main-bg;
+    background-color: $color-white;
   }
 
   &__right {
-    background-color: $color-secondary-bg;
+    background-color: $color-main-bg;
   }
 }
 

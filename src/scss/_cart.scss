@@ -5,7 +5,7 @@ slide-out-cart.cart {
   top: 0;
   right: 0;
   width: 460px;
-  max-width: calc(100% - 24px);
+  max-width: calc(100% - 60px);
   height: 100%;
   background: $color-white;
   box-shadow: -2px 0 8px rgba(0, 0, 0, 0.1);
@@ -32,7 +32,7 @@ slide-out-cart.cart {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
+    padding: $spacing-lg;
     border-bottom: 1px solid $color-grey;
     background: $color-white;
   }
@@ -51,29 +51,30 @@ slide-out-cart.cart {
     padding: 0;
 
     .cart__close-icon {
-      width: 20px;
-      height: 20px;
+      width: 18px;
+      height: auto;
     }
   }
 
   // ITEMS
   .cart__items {
     flex: 1;
+    flex: 1 1 auto;
     overflow-y: auto;
-    padding: 1.5rem;
+    padding: $spacing-lg;
   }
 
   .cart__item {
     display: flex;
     align-items: center;
-    margin-bottom: 1.5rem;
-    padding-bottom: 1.5rem;
+    margin-bottom: $spacing-lg;
+    padding-bottom: $spacing-lg;
     border-bottom: 1px solid $color-grey;
 
     &__image-container {
-      height: 110px;
+      flex: 1;
       overflow: hidden;
-      margin-right: 1rem;
+      margin-right: $spacing-md;
 
       img {
         width: 100%;
@@ -89,7 +90,7 @@ slide-out-cart.cart {
     }
 
     &__title {
-      font-size: 1rem;
+      font-size: $spacing-md;
       font-weight: bold;
       margin-bottom: 0.25rem;
       color: $color-black;
@@ -97,8 +98,14 @@ slide-out-cart.cart {
 
     &__price {
       font-size: 0.9rem;
-      margin-bottom: 1rem;
+      margin-bottom: 0.75rem;
       color: $color-orange;
+    }
+
+    &__quantity {
+      font-size: 0.9rem;
+      margin-bottom: 0.75rem;
+      color: $color-black;
     }
 
     &__remove {
@@ -117,7 +124,7 @@ slide-out-cart.cart {
   // FOOTER
   .cart__footer {
     border-top: 1px solid $color-grey;
-    padding: 1rem 2rem;
+    padding: $spacing-md $spacing-xl;
     background: $color-white;
   }
 
@@ -125,9 +132,9 @@ slide-out-cart.cart {
     display: flex;
     justify-content: center;
     gap: 0.3rem;
-    font-size: 1rem;
+    font-size: $spacing-md;
     font-weight: bold;
-    margin-bottom: 1rem;
+    margin-bottom: $spacing-md;
     color: $color-black;
   }
 
@@ -139,13 +146,8 @@ slide-out-cart.cart {
     border: none;
     border-radius: 30px;    
     font-weight: bold;
-    cursor: pointer;
-    margin-bottom: 0.5rem;
+    margin-bottom: $spacing-sm;
     transition: background 0.2s ease;
-
-    &:hover {
-      opacity: 0.9;
-    }
   }
 
   .cart__continue-btn {

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Pet brand landing page with product add-to-cart and slide-out cart.">
   <title>Pet Brand Landing</title>
-
+  <link rel="icon" type="image/svg+xml" href="./assets/logo.svg">
   <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -14,13 +14,13 @@
       <img src="./assets/logo.svg" alt="Brand Logo" class="header__logo-img">
     </div>
     <div class="header__right">
-      <button class="header__cart-btn">
+      <button class="header__cart-btn" aria-label="Open Cart">
         <img src="./assets/bag.svg" alt="Bag Icon" class="header__cart-icon">
       </button>
     </div>
   </header>
 
-  <div class="page">
+  <main class="page">
     <div class="page__left">
       <!-- INTRO -->
       <section class="intro">
@@ -42,7 +42,7 @@
         <div class="product__info">
           <h2 class="product__title">Natures Menu Dog Food Can Chicken</h2>
           <p class="product__price">£22.81</p>
-          <button class="product__add-btn">
+          <button class="product__add-btn" aria-label="Add to Bag">
             <span class="label">ADD TO BAG</span>
             <span class="spinner"></span>
             <span class="tick">✔</span>            
@@ -50,24 +50,24 @@
         </div>
       </section>
     </div>
-  </div>
+  </main>
 
   <!-- SLIDE OUT CART -->
 
   <slide-out-cart class="cart">
     <div class="cart__header">
       <h2 class="cart__title">Your Bag</h2>
-      <button class="cart__close-btn">
+      <button class="cart__close-btn" aria-label="Close Cart">
         <img src="./assets/close.svg" alt="Close Icon" class="cart__close-icon">
       </button>
     </div>
     <div class="cart__items">
-      
-
+      <!-- CART ITEMS RENDERED HERE DYNAMICALLY -->     
     </div>
     <div class="cart__footer">
       <p class="cart__total">
-        <span>Subtotal:</span><span>£22.81</span>
+        <span class="cart__total-label">Subtotal:</span>
+        <span class="cart__total-price">£0.00</span>
       </p>
       <button class="cart__checkout-btn">
         <span>PROCEED TO CHECKOUT</span>
