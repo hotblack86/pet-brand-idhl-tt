@@ -29,13 +29,20 @@ Design assets for **desktop and mobile** can be found in the `assets` folder.
 
 ## Instructions
 
-1. **Install dependencies**  
+1. **Clone the repository**  
+
+```bash
+git clone https://github.com/hotblack86/pet-brand-idhl-tt.git
+cd pet-brand-idhl-tt
+```
+
+2. **Install dependencies**  
 
 ```bash
 npm install
 ```
 
-2. **Start the development server**
+3. **Start the development server**
 
 ```bash
 npm run start
@@ -44,7 +51,7 @@ npm run start
 - The development server will be available at http://localhost:8080
 - Changes to the code will automatically reload the page
 
-3. **Build the project**
+4. **Build the project**
 
 ```bash
 npm run build
