@@ -51,6 +51,7 @@ class SlideOutCart extends HTMLElement {
   handleAddToBagClick() {
     if (!this.addBtn) return;
 
+    // Product (hardcoded for demo_purposes)
     const product = {
       id: "product-123",
       title: "Natures Menu Dog Food Can Chicken",

@@ -1,27 +1,63 @@
-Shopify Front End Developer Test
+# Shopify Front End Developer Test – Pet Brand Landing Page
 
-This test is for a fictional pet brand who require a responsive landing page with add to bag functionality. When the “add to bag” button is clicked, a cart slides out from the right.
-Please note: The cart content can be pre-populated, meaning no requirement to remove products, calculate total prices, or increment the cart counter.
-Our designers have created a desktop and mobile design for the page, which can be found in the assets folder. 
+## Overview
+This test is for a fictional pet brand requiring a responsive landing page with **add to bag** functionality. When the **“Add to Bag”** button is clicked, a slide-out cart appears from the right.   
 
-Requirements
-Mobile first build.
-Demonstrate the use of a task runner such as Webpack.
-Demonstrate the use of precompiled styles e.g. SASS
-A naming convention such as BEM, for easy to follow css classes and structure.
-Implement the slide out cart functionality using JavaScript.
-Create a 1 second loading animation before the slide out cart opens.
-Use animations for opening/closing the cart.
-Ensure the slide out cart is scrollable on mobiles and tablets.
-Ensure the implementation is cross-browser friendly.
-Build reusable components that could be used on other areas of the website
-Use Roboto and Open Sans fonts – which are available via Google Fonts.
+Design assets for **desktop and mobile** can be found in the `assets` folder.  
 
-Please don’t:
-Use any frameworks for styling or functionality (e.g. Bootstrap, React).
-Use any third party plugins providing modal functionality (e.g. Lightbox).
+---
 
-Deliverables
-The test as either a zip file or a Git repository
-All original pre-compiled code.
-Any notes or comments that support your test.
+## Requirements (for reference)
+
+- Mobile-first build  
+- Demonstrate the use of a task runner such as Webpack  
+- Demonstrate the use of precompiled styles (SASS)  
+- Use a naming convention such as BEM for CSS  
+- Implement the slide-out cart functionality using JavaScript  
+- Create a 1-second loading animation before the cart opens  
+- Use animations for opening/closing the cart  
+- Ensure the slide-out cart is scrollable on mobiles and tablets  
+- Ensure cross-browser compatibility  
+- Build reusable components usable in other areas of the website  
+- Use Roboto and Open Sans fonts from Google Fonts  
+
+**Do not:**  
+- Use any frameworks for styling or functionality (e.g., Bootstrap, React)  
+- Use third-party modal plugins (e.g., Lightbox)  
+
+---
+
+## Getting Started
+
+## Running the Project Locally
+
+1. **Install dependencies**  
+
+```bash
+npm install
+
+2. **Start the development server**
+
+```bash
+npm run start
+
+- The development server will be available at http://localhost:8080
+- Changes to the code will automatically reload the page
+
+3. **Build the project**
+
+```bash
+npm run build
+
+- Generates minified CSS and JS in the dist/ folder
+- The dist/ folder can be deployed directly to a web server
+
+
+**Notes**
+- The slide-out cart is implemented as a reusable web component
+
+- SCSS variables are used for colors, spacing, and typography
+
+- The “Add to Bag” button features a 1-second spinner loading animation and tick confirmation before the cart slides out
+
+- Tested on desktop, iOS, and Android for responsiveness and cross-browser support
